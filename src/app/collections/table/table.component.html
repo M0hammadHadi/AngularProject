@@ -1,0 +1,17 @@
+<table class="ui table" ngClass="classname">
+    <thead>
+      <tr>
+        <ng-container  *ngFor="let a of header">
+          <th *ngIf= "a.show">{{a.value}}</th>
+        </ng-container>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <ng-container *ngFor="let a of header" >
+
+          <td *ngIf= "a.show">{{item[a.key]}}</td>
+        </ng-container>
+      </tr>
+    </tbody>
+  </table>

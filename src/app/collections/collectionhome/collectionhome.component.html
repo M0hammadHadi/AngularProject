@@ -1,1 +1,26 @@
-<p>collectionhome works!</p>
+<app-divider>TableComponent</app-divider>
+
+<app-table [data] = "data" [header]= "header" [classname]= "'celled'"></app-table>
+
+<app-divider>TabComponent</app-divider>
+<div class="ui grid">
+    <div class="four wide column">
+      <div class="ui vertical fluid tabular menu">
+        <a class="active item">
+          Bio
+        </a>
+        <a class="item">
+          Pics
+        </a>
+        <a class="item">
+          Companies
+        </a>
+      </div>
+    </div>
+    <div class="twelve wide stretched column">
+      <div class="ui segment">
+        This is an stretched grid column. This segment will always match the tab height
+      </div>
+    </div>
+  </div>
+<router-outlet></router-outlet>

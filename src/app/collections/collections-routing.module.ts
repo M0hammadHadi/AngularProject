@@ -1,8 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BiographComponent } from './biograph/biograph.component';
 import { CollectionhomeComponent } from './collectionhome/collectionhome.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { PartnersComponent } from './partners/partners.component';
 
-const routes: Routes = [{path:'' , component:CollectionhomeComponent}];
+const routes: Routes = [
+  {path:'' 
+  , component:CollectionhomeComponent
+  ,children: [
+    {path : '' , component:BiographComponent},
+    {path:'companies' , component:CompaniesComponent},
+    {path: 'partners' , component:PartnersComponent}
+  ]
+}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

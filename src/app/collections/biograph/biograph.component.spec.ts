@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CollectionhomeComponent } from './collectionhome.component';
+import { BiographComponent } from './biograph.component';
 
-describe('CollectionhomeComponent', () => {
-  let component: CollectionhomeComponent;
-  let fixture: ComponentFixture<CollectionhomeComponent>;
+describe('BiographComponent', () => {
+  let component: BiographComponent;
+  let fixture: ComponentFixture<BiographComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CollectionhomeComponent ]
+      declarations: [ BiographComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CollectionhomeComponent);
+    fixture = TestBed.createComponent(BiographComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
